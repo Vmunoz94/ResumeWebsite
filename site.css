@@ -2,42 +2,65 @@ body, html {
     height: 100%;
 }
 
-/*Parallax image*/
-.parallax-1 {
-    /* The image used */
-    background-image: url("https://wallpaperhunt-enymylozh6t.netdna-ssl.com/img/wallpapers/wallpaperhunt_Minimal_Nature_Landscape_82_13.jpg");
+.jumbotron{
+     /* get rid of the white space at the bottom of the jumbotron */
+     margin-bottom: 0;
+}
 
-    /* Full height */
-    /*height: 100%;*/
-    color: black;
+/* set the navbar to stay on top of the screen as you scroll */
+.affix {
+   top:0;
+   width: 100%;
+   z-index: 9999 !important;
+}
+.navbar {
+   margin-bottom: 0px;
+}
+.affix ~ .container-fluid {
+   position: relative;
+   top: 50px;
+}
+.active {
+    background-color: #4CAF50;
+}
+
+/*Parallax image*/
+.parallax-1{
+     /* The image used */
+    background-image: url("Images/sunnyBackground.png");
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    /* add the text box */
+    color: black;
+    padding-top:10%;
+    height:110%;
+    border-bottom: 10px solid black;
 }
 .parallax-2 {
     /* The image used */
-    background-image: url("http://subwallpaper.com/Widescreen-Wallpapers/google-wallpaper-hd-resolution-For-Widescreen-Wallpaper.png");
-
-    /* Full height */
-    /*height: 100%;*/
-    color: black;
+    background-image: url("Images/afternoonBackground.png");
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    /* add the text box */
+    color: black;
+    padding-top:10%;
+    height:110%;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
 }
 .parallax-3{
      /* The image used */
-    background-image: url("https://wallpaperscraft.com/image/minimalism_sky_clouds_sun_mountains_lake_landscape_95458_3840x2400.jpg");
-
-    /* Full height */
-    /*height: 100%;*/
-    color: white;
+    background-image: url("Images/nightBackground.jpg");
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -45,119 +68,30 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 20px;
-}
-.parallax-4{
-     /* The image used */
-    background-image: url("http://www.paperhi.com/download/view?resolution=1920x1080&file=MTkyMHgxMDgwLzIwMTMwMzE3L25pZ2h0IGFuZHJvaWQgZ29vZ2xlIG1vdXRhaW4gZ29vZ2xlIG5vdyAxOTIweDEwODAgd2FsbHBhcGVyX3d3dy5wYXBlcmhpLmNvbV8zMC5qcGc=&name=bmlnaHRfYW5kcm9pZF9nb29nbGVfbW91dGFpbl9nb29nbGVfbm93XzE5MjB4MTA4MF93YWxscGFwZXI=");
 
-    /* Full height */
-    /*height: 100%;*/
+    /* add the text box */
     color: white;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 20px;
+    padding-top:10%;
+    height:110%;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
 }
-.parallax-5{
-     /* The image used */
-    /*background-image: url("http://www.paperhi.com/download/view?resolution=1920x1080&file=MTkyMHgxMDgwLzIwMTMwMzE3L25pZ2h0IGFuZHJvaWQgZ29vZ2xlIG1vdXRhaW4gZ29vZ2xlIG5vdyAxOTIweDEwODAgd2FsbHBhcGVyX3d3dy5wYXBlcmhpLmNvbV8zMC5qcGc=&name=bmlnaHRfYW5kcm9pZF9nb29nbGVfbW91dGFpbl9nb29nbGVfbm93XzE5MjB4MTA4MF93YWxscGFwZXI=");*/
-
-    /* Full height */
-    /*height: 100%;*/
-    color: white;
-
-    /* Create the parallax scrolling effect */
-    /*background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;*/
-
-}
-
-.jumbotron{
-     margin-bottom: 0;
-}
-/*centering blockquote*/
-blockquote{
-     padding-top: 200px;
-}
-
-/*navBar*/
-.affix {
-      top: 0;
-      width: 100%;
-      z-index: 9999 !important;
-  }
-
-  .affix + .container-fluid {
-      padding-top: 70px;
-  }
-
-
-
-
-
-
-
-
-
-
-  body {
-      position: relative;
-  }
-  .affix {
-      top:0;
-      width: 100%;
-      z-index: 9999 !important;
-  }
-  .navbar {
-      margin-bottom: 0px;
-  }
-
-  .affix ~ .container-fluid {
-     position: relative;
-     top: 50px;
-  }
-  #section1 {
-       padding-top:10%;
-       height:110%;
-       border-bottom: 10px solid black;
- }
-  #section2 {
-       padding-top:10%;
-       height:110%;
-       border-top: 10px solid black;
-       border-bottom: 10px solid black;
- }
-  #section3 {
-       padding-top:10%;
-       height:110%;
-       border-top: 10px solid black;
-       border-bottom: 10px solid black;
-}
-  #section4 {
-       padding-top:10%;
-       height:110%;
-       border-top: 10px solid black;
-       border-bottom: 10px solid black;
-}
-  #bottom {
-       padding-top:50px;
-       height:200px;
-       background-color: #4d4d4d;
-       border-top: 10px solid white;
+.disclaimerBlock{
+     /* add the text box */
+     color: white;
+     padding-top:50px;
+     height:200px;
+     background-color: #4d4d4d;
+     border-top: 10px solid white;
 }
 
 
+/* style text */
 .h1HeaderWhite{
      text-align: center;
      font-size: 350%;
      font-weight: bold;
      background-color: rgba(255, 255, 255, .6);
-
 }
 .textWhite{
      padding-top: 50px;
@@ -166,15 +100,12 @@ blockquote{
      font-size: 150%;
      background-color: white;
      background-color: rgba(255, 255, 255, .6);
-
 }
-
 .h1HeaderBlack{
      text-align: center;
      font-size: 350%;
      font-weight: bold;
      background-color: rgba(0, 0, 0, .6);
-
 }
 .textBlack{
      padding-top: 50px;
@@ -183,10 +114,4 @@ blockquote{
      font-size: 150%;
      background-color: white;
      background-color: rgba(0, 0, 0, .6);
-
-}
-a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
 }
