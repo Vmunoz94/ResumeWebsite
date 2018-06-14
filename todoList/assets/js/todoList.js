@@ -23,10 +23,7 @@ function checkIfComplete(){
 //add click listeners when page loads and to any future span
 function deleteButton(){
      $("ul").on("click", "span", function(){
-
-          $(this).parent().fadeOut(function(){
-               $(this).remove();
-          });
+          $(this).parent().remove();
           event.stopPropagation();
      });
 }
@@ -45,6 +42,6 @@ function enterButton(){
 //show/hide the input text box
 function addButton(){
      $("h1 i").on("click", function(){
-          $("input[type='text']").fadeToggle();
+          $("input[type='text']").slideToggle();
      });
 }
