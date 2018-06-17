@@ -1,0 +1,163 @@
+body, html {
+    height: 100%;
+}
+
+.jumbotron{
+     /* get rid of the white space at the bottom of the jumbotron */
+     margin-bottom: 0;
+     letter-spacing: 5px;
+     padding-bottom: 25px;
+}
+.display-4{
+     font-family: 'Shrikhand', cursive;
+}
+/* the hr inside the jumbotron */
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+/* the paragraph inside the jumbotron */
+.lead{
+     padding-left: 100px;
+     margin-bottom: 0;
+}
+#name{
+     float: right;
+     background-color: #343a40;
+     color: #e9ecef;
+     border-radius: 10px;
+     padding: 2px 10px;
+     opacity: .5;
+     transition: all .2s;
+     -webkit-transition: all .2s;
+     -moz-transition: all .2s;
+}
+
+/* navbar color transitions smoothly */
+.navbar{
+     background-color: #e9ecef;
+     border-bottom: 5px solid #343a40;
+     transition: all .5s;
+     -webkit-transition: all .5s;
+     -moz-transition: all .5s;
+}
+/* fix navbar to top on scroll */
+.sticky.is-sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #343a40 !important;
+  transition: all .5s;
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
+
+}
+
+/* style text */
+.containerBorder{
+     background-color: rgba(255, 255, 255, .6);
+}
+h2{
+     font-family: 'Shrikhand', cursive;
+     text-align: center;
+     font-size: 350%;
+     text-shadow: grey 1px 0 10px;
+     text-decoration: underline;
+     letter-spacing: 2px;
+}
+.h1HeaderBlack{
+     text-align: center;
+     font-size: 350%;
+     font-weight: bold;
+     background-color: rgba(255, 255, 255, .6);
+}
+.textWhite{
+     padding: 50px;
+     text-align: center;
+     font-weight: bold;
+     font-size: 150%;
+     background-color: white;
+     background-color: rgba(255, 255, 255, .6);
+     border-radius: 25px;
+}
+.h1HeaderBlack{
+     text-align: center;
+     font-size: 350%;
+     font-weight: bold;
+     background-color: rgba(0, 0, 0, .6);
+}
+.textBlack{
+     padding-top: 50px;
+     text-align: center;
+     font-weight: bold;
+     font-size: 150%;
+     background-color: white;
+     background-color: rgba(0, 0, 0, .6);
+}
+
+
+/*Parallax image*/
+.parallax-1{
+     /* The image used */
+    /* background-image: url("images/sunnyBackground.png"); */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* add the text box */
+    color: black;
+    padding-top:10%;
+    height:110%;
+    border-bottom: 10px solid black;
+}
+.parallax-2 {
+    /* The image used */
+    /* background-image: url("images/afternoonBackground.png"); */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* add the text box */
+    color: black;
+    padding-top:10%;
+    height:110%;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+}
+.parallax-3{
+     /* The image used */
+    /* background-image: url("images/nightBackground.jpg"); */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+
+    /* add the text box */
+    color: white;
+    padding-top:10%;
+    height:110%;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+}
+.disclaimerBlock{
+     /* add the text box */
+     color: white;
+     padding-top:50px;
+     height:200px;
+     background-color: #4d4d4d;
+     border-top: 10px solid white;
+}
