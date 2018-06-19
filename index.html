@@ -19,7 +19,7 @@
      <body>
 
           <!-- jumbotron -->
-          <div class="jumbotron jumbotron-fluid">
+          <div id="home" class="jumbotron jumbotron-fluid">
                <div class="container">
                     <h1 class="display-4"><strong>Welcome...</strong></h1>
                     <hr class="my-4 style">
@@ -30,7 +30,7 @@
           <!-- navbar -->
           <nav class="navbar navbar-expand-lg navbar-dark" data-toggle="sticky-onscroll">
                <div class="container">
-                    <a class="navbar-brand" href="#"><i class="fas fa-home"></i> Home</a>
+                    <a class="navbar-brand" href="#home"><i class="fas fa-home"></i> Home</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                          <i class="fas fa-bars"></i>
                     </button>
@@ -48,7 +48,7 @@
                          </ul>
                          <ul class="navbar-nav">
                               <li class="nav-item">
-                                   <a class="nav-link" href="#"><i class="fas fa-file-alt"></i></i> Resume</a>
+                                   <a class="nav-link" href="#home"><i class="fas fa-file-alt"></i></i> Resume</a>
                               </li>
                          </ul>
                     </div>
@@ -58,39 +58,73 @@
           <!-- sections -->
           <div id="section1" class="parallax-1" style="background-image:url('resumeWebsite/images/sunnyBackground.png');">
                <div class="container">
-                    <h2 class="headerBlack"><strong>About:</strong></h1>
+                    <h2 class="headerBlack"><strong>About:</strong></h2>
                     <!-- <p class="textWhite">So, A little bit about me. My name is Victor Mu&ntilde;oz. I go to San Francisco State, hoping to graduate someday. I spent two years as a mechanical engineer major, but I switched when I had to take a C++ class for that major. I thought it was a lot more fun so I made the switch. Who knows where this degree will take me or what I would want to do with it. </p> -->
                     <div class="row">
-                         <div class="col-lg aboutText">
+                         <div class="columnAbout col-lg">
                               <p>Found out about computer science on my second year of college... by accident.</p>
                               <p>Switched majors and never looked back.</p>
                               <p>"Better late than never"</p>
                          </div>
-                         <div class="col-lg">
+                         <div class="columnAbout col-lg">
                               <p>I'm still learning, trying to figure out what interests me the most.</p>
                               <p>Currently taking some online classes on Udemy just for fun, as well as to learn new things.</p>
                          </div>
-                         <div class="col-lg">
+                         <div class="columnAbout col-lg">
                               <p>Goals:</p>
                               <p>Finish the online Web Developer Bootcamp course.</p>
                               <p>Finish the online Modern Python 3 Bootcamp course in order to start the Artificial Intelligence course.</p>
                          </div>
                     </div>
+                    <div class="container">
+                         <div class="columnAboutBottom col-lg">
+                              <p>...</p>
+                         </div>
+                    </div>
                </div>
           </div>
+
           <hr id="divider">
+
           <div id="section2" class="parallax-2" style="background-image:url('resumeWebsite/images/afternoonBackground.png');">
                <div class="container">
-                    <h2 class="headerBlack"><strong>Projects:</strong></h1>
-                    <p class="textWhite">
-                         <a href="https://github.com/Vmunoz94" class="btn btn-danger btn-lg" role="button">Class Projects</a>
-                    </p>
+                    <h2 class="headerBlack"><strong>Projects:</strong></h2>
+                    <div id="rowProjects" class="row">
+                         <div class="columnProjects col-lg-3">
+                              <!-- <h6>Web Development Projects:</h6> -->
+                              <ul>
+                                   <li><a class="projectLinks btn btn-outline-dark active" href="https://vmunoz94.github.io/ResumeWebsite/colorGame/colorGame">Color Game</a></li>
+                                   <li><a class="projectLinks btn btn-outline-dark" href="https://vmunoz94.github.io/ResumeWebsite/todoList/todoList">Todo List</a></li>
+                                   <li><a class="projectLinks btn btn-outline-dark" href="https://vmunoz94.github.io/ResumeWebsite/patatap/patatap">Patatap</a></li>
+                                   <li><a class="projectLinks btn btn-outline-dark" href="">Tank Wars</a></li>
+                                   <li><a class="projectLinks btn btn-outline-dark" href="">Galactic Mail</a></li>
+                                   <li><a class="projectLinks btn btn-outline-dark" href="">Calculator</a></li>
+                              </ul>
+                         </div>
+                         <div class="columnProjects col-lg-9">
+                              <!-- <h6>Class Projects:</h6> -->
+                              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                   <!-- <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                   </ol> -->
+                                   <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                             <img src="resumeWebsite/images/colorGame.png">
+                                        </div>
+                                        <!-- <div class="carousel-item">
+                                             <img class="d-block w-100" src="resumeWebsite/images/galacticMail.png" alt="Second slide">
+                                        </div> -->
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
                </div>
           </div>
           <hr id="divider">
           <div id="section3" class="parallax-3" style="background-image:url('resumeWebsite/images/nightBackground.jpg');">
                <div class="container">
-                    <h2 class="h1HeaderBlack"><strong>Contact:</strong></h1>
+                    <h2 class="h1HeaderBlack"><strong>Contact:</strong></h2>
                     <p class="textBlack">
                          <a href="mailto:vmunoz94@hotmail.com" class="btn btn-info btn-lg" role="button">Email</a>
                     </p>
@@ -99,7 +133,7 @@
           <hr id="divider">
           <div class="disclaimerBlock">
                <div class="container">
-                    <h3><strong>Disclaimer:</strong></h1>
+                    <h3><strong>Disclaimer:</strong></h3>
                     <p>
                          Images, although awesome, are not mine
                     </p>
@@ -107,7 +141,7 @@
           </div>
           <!-- Optional JavaScript -->
           <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
           <script type="text/javascript" src="resumeWebsite/js/site.js"></script>
