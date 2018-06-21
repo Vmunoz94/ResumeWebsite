@@ -97,47 +97,89 @@ $('a[href*="#"]')
 
 // make button active and change src files of images
 $(".projectLinks").on("mouseover", function(){
-     $(".projectLinks").removeClass("active");
-     if($(this).text() === "Color Game"){
+     // $(".projectLinks").removeClass("active");
+     if($(this).text() === "Color Game" && !($(this).hasClass("active"))){
+          $(".projectLinks").removeClass("active");
           $(this).addClass("active");
           $("img").fadeOut(function(){
                $("img").attr("src", "resumeWebsite/images/colorGame.png");
                $("img").fadeIn();
           });
+          $("#imgCaptions").fadeOut(function(){
+               $("#imgCaptions").text("Try and guess the correct rgb color!");
+               $("#imgCaptions").fadeIn();
+          });
      }
-     else if($(this).text() === "Todo List"){
+     else if($(this).text() === "Todo List" && !($(this).hasClass("active"))){
+          $(".projectLinks").removeClass("active");
           $(this).addClass("active");
           $("img").fadeOut(function(){
                $("img").attr("src", "resumeWebsite/images/todoList.png");
                $("img").fadeIn();
           });
+          $("#imgCaptions").fadeOut(function(){
+               $("#imgCaptions").text("Don't forget the things you need to-do!");
+               $("#imgCaptions").fadeIn();
+          });
      }
-     else if($(this).text() === "Patatap"){
+     else if($(this).text() === "Patatap" && !($(this).hasClass("active"))){
+          $(".projectLinks").removeClass("active");
           $(this).addClass("active");
           $("img").fadeOut(function(){
                $("img").attr("src", "resumeWebsite/images/patatap.png");
                $("img").fadeIn();
           });
+          $("#imgCaptions").fadeOut(function(){
+               $("#imgCaptions").text("Make sweet music by pressing on the keyboard");
+               $("#imgCaptions").fadeIn();
+          });
      }
-     else if($(this).text() === "Tank Wars"){
+     else if($(this).text() === "Tank Wars" && !($(this).hasClass("active"))){
+          $(".projectLinks").removeClass("active");
           $(this).addClass("active");
           $("img").fadeOut(function(){
                $("img").attr("src", "resumeWebsite/images/tankWar.png");
                $("img").fadeIn();
           });
+          $("#imgCaptions").fadeOut(function(){
+               $("#imgCaptions").text("Shoot and destroy the enemy to win");
+               $("#imgCaptions").fadeIn();
+          });
      }
-     else if($(this).text() === "Galactic Mail"){
+     else if($(this).text() === "Galactic Mail" && !($(this).hasClass("active"))){
+          $(".projectLinks").removeClass("active");
           $(this).addClass("active");
           $("img").fadeOut(function(){
                $("img").attr("src", "resumeWebsite/images/galacticMail.png");
                $("img").fadeIn();
           });
+          $("#imgCaptions").fadeOut(function(){
+               $("#imgCaptions").text("Deliver the mail while avoiding all the asteroids");
+               $("#imgCaptions").fadeIn();
+          });
      }
-     else if($(this).text() === "Calculator"){
+     else if($(this).text() === "Calculator" && !($(this).hasClass("active"))){
+          $(".projectLinks").removeClass("active");
           $(this).addClass("active");
           $("img").fadeOut(function(){
                $("img").attr("src", "resumeWebsite/images/calculator.png");
                $("img").fadeIn();
+          });
+          $("#imgCaptions").fadeOut(function(){
+               $("#imgCaptions").text("Handy dandy calculator");
+               $("#imgCaptions").fadeIn();
+          });
+     }
+     else if($(this).text() === " More Projects" && !($(this).hasClass("active"))){
+          $(".projectLinks").removeClass("active");
+          $(this).addClass("active");
+          $("img").fadeOut(function(){
+               $("img").attr("src", "");
+               $("img").fadeIn();
+          });
+          $("#imgCaptions").fadeOut(function(){
+               $("#imgCaptions").text("...");
+               $("#imgCaptions").fadeIn();
           });
      }
 })

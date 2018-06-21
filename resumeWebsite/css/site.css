@@ -1,6 +1,6 @@
-body, html {
+/* body, html {
     height: 100%;
-}
+} */
 
 .jumbotron{
      /* get rid of the white space at the bottom of the jumbotron */
@@ -19,7 +19,7 @@ hr.style{
 }
 /* the paragraph inside the jumbotron */
 .lead{
-     padding-left: 100px;
+     padding-left: 0;
      text-align: left;
      margin-bottom: 0;
 }
@@ -58,21 +58,14 @@ hr.style{
   box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
   -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
-
 }
 
 /* style text */
 /* About Section */
-.row{
-     padding-top: 25px;
-}
-.row2{
-     padding-top: 0;
-}
 .columnAbout{
      /* text-align: center; */
      background-color: rgba(255, 255, 255, .6);
-     height: 200px;
+     /* height: 200px; */
      margin: 5px;
      border-radius: 25px;
      padding-top: 10px;
@@ -80,24 +73,44 @@ hr.style{
 }
 .columnAboutBottom{
      background-color: rgba(255, 255, 255, .6);
-     height: 150px;
-     margin: 5px;
+     /* height: 150px; */
+     /* margin: 5px; */
      border-radius: 25px;
      padding-top: 10px;
      border: 1px solid black;
 }
+
+/* Experience Section */
+.columnExperience{
+     background-color: rgba(255, 255, 255, .6);
+     margin: 5px;
+     border-radius: 25px;
+     padding: 25px;
+     border: 1px solid black;
+     margin: 5px 10%;
+}
+.projectName{
+     font-weight: bold;
+     text-align: center;
+     text-decoration: underline;
+     font-size: 1.2em;
+}
+.tab{
+     margin-left: 10%;
+}
+
 /* Project Section */
 .columnProjects{
      padding-top: 10px;
 }
-/* .columnProjects:nth-of-type(2){
-     border-left: 1px solid black;
-} */
 #rowProjects{
      background-color: rgba(255, 255, 255, .6);
-     height: 750px;
+     height: 600px;
      border-radius: 25px;
      border: 1px solid black;
+     /* margin-top: 50px; */
+     padding-top: 50px;
+     /* padding-bottom: 50px; */
 }
 .projectLinks{
      padding: 10px;
@@ -116,12 +129,31 @@ li{
 }
 img{
      width: 100%;
-     /* display: none; */
      border-radius: 5px;
      border: 1px solid black;
 }
+#imgCaptions{
+     background-color: rgba(0, 0, 0, .5);
+     border-radius: 20px;
+     margin-left: 100px;
+     margin-right: 100px;
+}
 
-
+/* Contact Section */
+.outerColumn{
+     text-align: center;
+     background-color: rgba(0, 0, 0, .5);
+     border-radius: 10px;
+     margin: 0 20%;
+     padding-top: 25px;
+     padding-bottom: 25px;
+}
+a{
+     color: inherit;
+}
+a:hover{
+     color: inherit;
+}
 
 
 p{
@@ -135,36 +167,9 @@ h2{
      text-shadow: grey 1px 0 10px;
      text-decoration: underline;
      letter-spacing: 2px;
+     margin-bottom: 50px;
 }
-.h1HeaderBlack{
-     text-align: center;
-     font-size: 350%;
-     font-weight: bold;
-     background-color: rgba(255, 255, 255, .6);
-}
-.textWhite{
-     padding: 50px;
-     text-align: center;
-     font-weight: bold;
-     font-size: 150%;
-     background-color: white;
-     background-color: rgba(255, 255, 255, .6);
-     border-radius: 25px;
-}
-.h1HeaderBlack{
-     text-align: center;
-     font-size: 350%;
-     font-weight: bold;
-     background-color: rgba(0, 0, 0, .6);
-}
-.textBlack{
-     padding-top: 50px;
-     text-align: center;
-     font-weight: bold;
-     font-size: 150%;
-     background-color: white;
-     background-color: rgba(0, 0, 0, .6);
-}
+
 
 
 /*Parallax image*/
@@ -184,9 +189,9 @@ h2{
     height:1000px;
     /* border-bottom: 10px solid black; */
 }
-.parallax-2 {
-    /* The image used */
-    /* background-image: url("images/afternoonBackground.png"); */
+.parallax-2{
+     /* The image used */
+    /* background-image: url("images/sunnyBackground.png"); */
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -198,10 +203,26 @@ h2{
     color: black;
     padding-top:10%;
     height:1000px;
+    /* border-bottom: 10px solid black; */
+}
+.parallax-3 {
+    /* The image used */
+    /* background-image: url("images/afternoonBackground.png"); */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* add the text box */
+    /* color: white; */
+    padding-top:10%;
+    height:1000px;
     /* border-top: 10px solid black; */
     /* border-bottom: 10px solid black; */
 }
-.parallax-3{
+.parallax-4{
      /* The image used */
     /* background-image: url("images/nightBackground.jpg"); */
 
@@ -215,7 +236,7 @@ h2{
     /* add the text box */
     color: white;
     padding-top:10%;
-    height:1000px;
+    height:800px;
     /* border-top: 10px solid black; */
     /* border-bottom: 10px solid black; */
 }
@@ -223,8 +244,8 @@ h2{
      /* add the text box */
      color: white;
      padding-top:50px;
-     height:200px;
-     background-color: #4d4d4d;
+     height:250px;
+     background-color: #343a40;
      /* border-top: 10px solid white; */
      box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.5);
      -webkit-box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.5);

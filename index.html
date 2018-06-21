@@ -37,13 +37,16 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                          <ul class="navbar-nav mr-auto">
                               <li class="nav-item">
-                                   <a class="nav-link" href="#section1"><i class="fas fa-user-circle"></i> About</a>
+                                   <a class="nav-link" href="#aboutSection"><i class="fas fa-user-circle"></i> About</a>
                               </li>
                               <li class="nav-item">
-                                   <a class="nav-link" href="#section2"><i class="fas fa-graduation-cap"></i> Projects</a>
+                                   <a class="nav-link" href="#experienceSection"><i class="fas fa-code"></i></i> Experience</a>
                               </li>
                               <li class="nav-item">
-                                   <a class="nav-link" href="#section3"><i class="fas fa-info-circle"></i> Contact</a>
+                                   <a class="nav-link" href="#projectsSection"><i class="fas fa-graduation-cap"></i> Projects</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="#contactSection"><i class="fas fa-info-circle"></i> Contact</a>
                               </li>
                          </ul>
                          <ul class="navbar-nav">
@@ -56,49 +59,87 @@
           </nav>
 
           <!-- sections -->
-          <div id="section1" class="parallax-1" style="background-image:url('resumeWebsite/images/sunnyBackground.png');">
+          <!-- About Section -->
+          <div id="aboutSection" class="parallax-1" style="background-image:url('resumeWebsite/images/morningBackground.png');">
                <div class="container">
-                    <h2 class="headerBlack"><strong>About:</strong></h2>
+                    <h2><strong>About:</strong></h2>
                     <!-- <p class="textWhite">So, A little bit about me. My name is Victor Mu&ntilde;oz. I go to San Francisco State, hoping to graduate someday. I spent two years as a mechanical engineer major, but I switched when I had to take a C++ class for that major. I thought it was a lot more fun so I made the switch. Who knows where this degree will take me or what I would want to do with it. </p> -->
                     <div class="row">
                          <div class="columnAbout col-lg">
                               <p>Found out about computer science on my second year of college... by accident.</p>
                               <p>Switched majors and never looked back.</p>
-                              <p>"Better late than never"</p>
+                              <p>- "Better late than never"</p>
                          </div>
                          <div class="columnAbout col-lg">
-                              <p>I'm still learning, trying to figure out what interests me the most.</p>
-                              <p>Currently taking some online classes on Udemy just for fun, as well as to learn new things.</p>
+                              <p>I do like tinkering with my car.</p>
+                              <p>Some people on <a href="https://www.instagram.com/abarth_bobbys/?hl=en"><i class="fab fa-instagram"></i></a> have really nice customized versions of my car</p>
+                              <p>#Goals</p>
                          </div>
                          <div class="columnAbout col-lg">
-                              <p>Goals:</p>
-                              <p>Finish the online Web Developer Bootcamp course.</p>
-                              <p>Finish the online Modern Python 3 Bootcamp course in order to start the Artificial Intelligence course.</p>
+                              <p>Ran cross-country and track in high school.</p>
+                              <p>Joined the triathlon club in college, but only for a year.</p>
+                              <p>Triathlons are tough and I'm not a good swimmer</p>
                          </div>
                     </div>
-                    <div class="container">
+                    <!-- <div class="container"> -->
                          <div class="columnAboutBottom col-lg">
-                              <p>...</p>
+                              <p>Goals:</p>
+                              <p>Finish the back-end portion of the online Web Developer Bootcamp course.</p>
+                              <p>Finish the online Modern Python 3 Bootcamp course in order to start the Artificial Intelligence course.</p>
+                              <p>Make my car look nice, which probably won't ever happen.</p>
+                         </div>
+                    <!-- </div> -->
+               </div>
+          </div>
+          <hr id="divider">
+
+          <!-- Experience Section -->
+          <div id="experienceSection" class="parallax-2" style="background-image:url('resumeWebsite/images/afternoonBackground.png');">
+               <div class="container">
+                    <h2><strong>Experience:</strong></h2>
+               </div>
+               <div class="row">
+                    <div class="columnExperience col-sm">
+                         <div class="projectName">
+                              Tank Wars
+                         </div>
+                         <div>
+                              <span class="tab">Tank Wars</span> was a two-person project, which my partner and I had to communicate efficiently and effectively in order to meet the deadline.
+                              The purpose of the project was to practice good object-oriented programming so that we can reuse some of the code to make developing the second game easier.
+                              We split the project into multiple parts, my tasks included; creating the game engine, tanks, bullets, mini-map, health system, lives counter, sound, powerup, and game over screen.
+                         </div>
+                    </div>
+               </div>
+               <div class="row">
+                    <div class="columnExperience col-sm">
+                         <div class="projectName">
+                              Galactic Mail
+                         </div>
+                         <div>
+                              <span class="tab">Galactic Mail</span> was the second game we created.
+                              We were able to use a lot of the same classes as the tank game, which made developing this project much easier and faster.
+                              For this project I was tasked with creating the scoring system, high score chart, reset button, and level system.
                          </div>
                     </div>
                </div>
           </div>
-
           <hr id="divider">
 
-          <div id="section2" class="parallax-2" style="background-image:url('resumeWebsite/images/afternoonBackground.png');">
+          <!-- Project Section -->
+          <div id="projectsSection" class="parallax-3" style="background-image:url('resumeWebsite/images/eveningBackground.jpg');">
                <div class="container">
-                    <h2 class="headerBlack"><strong>Projects:</strong></h2>
+                    <h2><strong>Projects:</strong></h2>
                     <div id="rowProjects" class="row">
                          <div class="columnProjects col-lg-3">
-                              <!-- <h6>Web Development Projects:</h6> -->
+                              <!-- <h6>Click to play/download:</h6> -->
                               <ul>
                                    <li><a class="projectLinks btn btn-outline-dark active" href="https://vmunoz94.github.io/ResumeWebsite/colorGame/colorGame">Color Game</a></li>
                                    <li><a class="projectLinks btn btn-outline-dark" href="https://vmunoz94.github.io/ResumeWebsite/todoList/todoList">Todo List</a></li>
                                    <li><a class="projectLinks btn btn-outline-dark" href="https://vmunoz94.github.io/ResumeWebsite/patatap/patatap">Patatap</a></li>
-                                   <li><a class="projectLinks btn btn-outline-dark" href="">Tank Wars</a></li>
-                                   <li><a class="projectLinks btn btn-outline-dark" href="">Galactic Mail</a></li>
-                                   <li><a class="projectLinks btn btn-outline-dark" href="">Calculator</a></li>
+                                   <li><a class="projectLinks btn btn-outline-dark" >Tank Wars</a></li>
+                                   <li><a class="projectLinks btn btn-outline-dark" >Galactic Mail</a></li>
+                                   <li><a class="projectLinks btn btn-outline-dark" >Calculator</a></li>
+                                   <li><a class="projectLinks btn btn-outline-dark" href="https://github.com/Vmunoz94"><i class="fab fa-github"></i> More Projects</a></li>
                               </ul>
                          </div>
                          <div class="columnProjects col-lg-9">
@@ -111,6 +152,10 @@
                                    <div class="carousel-inner">
                                         <div class="carousel-item active">
                                              <img src="resumeWebsite/images/colorGame.png">
+                                             <div class="carousel-caption d-none d-md-block">
+                                                  <!-- <h5>Color Game</h5> -->
+                                                  <p id="imgCaptions">Try and guess the correct rgb color!</p>
+                                             </div>
                                         </div>
                                         <!-- <div class="carousel-item">
                                              <img class="d-block w-100" src="resumeWebsite/images/galacticMail.png" alt="Second slide">
@@ -122,24 +167,71 @@
                </div>
           </div>
           <hr id="divider">
-          <div id="section3" class="parallax-3" style="background-image:url('resumeWebsite/images/nightBackground.jpg');">
+
+          <!-- Contact Section -->
+          <div id="contactSection" class="parallax-4" style="background-image:url('resumeWebsite/images/nightBackground.jpg');">
                <div class="container">
-                    <h2 class="h1HeaderBlack"><strong>Contact:</strong></h2>
-                    <p class="textBlack">
-                         <a href="mailto:vmunoz94@hotmail.com" class="btn btn-info btn-lg" role="button">Email</a>
-                    </p>
+                    <h2><strong>Contact:</strong></h2>
+                    <div class="row">
+                        <div class="outerColumn col-sm">
+                              <div class="row">
+                                   <div class="col-lg">
+                                        <strong><i class="fas fa-envelope"></i> Email:</strong>
+                                   </div>
+                                   <div class="col-lg">
+                                        <!-- One of three columns -->
+                                   </div>
+                                   <div class="col-lg">
+                                        <a href="mailto:Vmunoz94@hotmail.com">Vmunoz94@hotmail.com</a>
+                                   </div>
+                              </div>
+                              <div class="row">
+                                   <div class="col-lg">
+                                        <strong><i class="fas fa-mobile-alt"></i> Phone:</strong>
+                                   </div>
+                                   <div class="col-lg">
+                                        <!-- One of three columns -->
+                                   </div>
+                                   <div class="col-lg">
+                                        (510)-734-0433
+                                   </div>
+                              </div>
+                              <div class="row">
+                                   <div class="col-lg">
+                                        <strong><i class="fas fa-home"></i> Address:</strong>
+                                   </div>
+                                   <div class="col-lg">
+                                        <!-- One of three columns -->
+                                   </div>
+                                   <div class="col-lg">
+                                        SF Bay Area, CA
+                                   </div>
+                              </div>
+                        </div>
+                    </div>
                </div>
           </div>
           <hr id="divider">
+
+          <!-- Disclaimer Section -->
           <div class="disclaimerBlock">
                <div class="container">
                     <h3><strong>Disclaimer:</strong></h3>
                     <p>
-                         Images, although awesome, are not mine
+                         Background images, although awesome, are not mine
+                    </p>
+                    <p>
+                         <a href=""><i class="fab fa-facebook-f"></i></a>
+                         <a href=""><i class="fab fa-github"></i></a>
+                         <a href=""><i class="far fa-smile"></i></a>
+                         <a href=""><i class="fas fa-beer"></i></a>
+                    </p>
+                    <p>
+                         *For educational purposes only* <i class="far fa-copyright"></i> Proudly made with a lot of googling
                     </p>
                </div>
           </div>
-          <!-- Optional JavaScript -->
+
           <!-- jQuery first, then Popper.js, then Bootstrap JS -->
           <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
