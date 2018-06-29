@@ -1,5 +1,7 @@
-/* body, html {
-    height: 100%;
+/* body{
+    overflow-x: hidden;
+    max-width: 100%;
+    min-width: 100%;
 } */
 
 .jumbotron{
@@ -45,27 +47,25 @@ hr.style{
 }
 /* fix navbar to top on scroll */
 .sticky.is-sticky {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  background-color: #343a40 !important;
-  transition: all .5s;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
-  -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
+     position: fixed;
+     left: 0;
+     right: 0;
+     top: 0;
+     z-index: 1000;
+     width: 100%;
+     background-color: #343a40 !important;
+     transition: all .5s;
+     -webkit-transition: all .5s;
+     -moz-transition: all .5s;
+     box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
+     -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
+     -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.5);
 }
 
 /* style text */
 /* About Section */
 .columnAbout{
-     /* text-align: center; */
      background-color: rgba(255, 255, 255, .6);
-     /* height: 200px; */
      margin: 5px;
      border-radius: 25px;
      padding-top: 10px;
@@ -73,8 +73,6 @@ hr.style{
 }
 .columnAboutBottom{
      background-color: rgba(255, 255, 255, .6);
-     /* height: 150px; */
-     /* margin: 5px; */
      border-radius: 25px;
      padding-top: 10px;
      border: 1px solid black;
@@ -87,7 +85,6 @@ hr.style{
      border-radius: 25px;
      padding: 25px;
      border: 1px solid black;
-     margin: 5px 10%;
 }
 .projectName{
      font-weight: bold;
@@ -97,6 +94,9 @@ hr.style{
 }
 .tab{
      margin-left: 10%;
+}
+.bulletPoint{
+     list-style-type: circle;
 }
 
 /* Project Section */
@@ -108,9 +108,7 @@ hr.style{
      height: 600px;
      border-radius: 25px;
      border: 1px solid black;
-     /* margin-top: 50px; */
      padding-top: 50px;
-     /* padding-bottom: 50px; */
 }
 .projectLinks{
      padding: 10px;
@@ -158,7 +156,6 @@ a:hover{
 
 p{
      text-align: center;
-     /* padding: 5px; */
 }
 h2{
      font-family: 'Shrikhand', cursive;
@@ -174,9 +171,6 @@ h2{
 
 /*Parallax image*/
 .parallax-1{
-     /* The image used */
-    /* background-image: url("images/sunnyBackground.png"); */
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -186,13 +180,9 @@ h2{
     /* add the text box */
     color: black;
     padding-top:10%;
-    height:1000px;
-    /* border-bottom: 10px solid black; */
+    height:1100px;
 }
 .parallax-2{
-     /* The image used */
-    /* background-image: url("images/sunnyBackground.png"); */
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -202,13 +192,9 @@ h2{
     /* add the text box */
     color: black;
     padding-top:10%;
-    height:1000px;
-    /* border-bottom: 10px solid black; */
+    height:1100px;
 }
 .parallax-3 {
-    /* The image used */
-    /* background-image: url("images/afternoonBackground.png"); */
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -216,29 +202,20 @@ h2{
     background-size: cover;
 
     /* add the text box */
-    /* color: white; */
     padding-top:10%;
-    height:1000px;
-    /* border-top: 10px solid black; */
-    /* border-bottom: 10px solid black; */
+    height:1100px;
 }
 .parallax-4{
-     /* The image used */
-    /* background-image: url("images/nightBackground.jpg"); */
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* margin-bottom: 20px; */
 
     /* add the text box */
     color: white;
     padding-top:10%;
     height:800px;
-    /* border-top: 10px solid black; */
-    /* border-bottom: 10px solid black; */
 }
 .disclaimerBlock{
      /* add the text box */
@@ -246,7 +223,6 @@ h2{
      padding-top:50px;
      height:250px;
      background-color: #343a40;
-     /* border-top: 10px solid white; */
      box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.5);
      -webkit-box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.5);
      -moz-box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.5);

@@ -174,11 +174,11 @@ $(".projectLinks").on("mouseover", function(){
           $(".projectLinks").removeClass("active");
           $(this).addClass("active");
           $("img").fadeOut(function(){
-               $("img").attr("src", "");
+               $("img").attr("src", "resumeWebsite/images/git.jpg");
                $("img").fadeIn();
           });
           $("#imgCaptions").fadeOut(function(){
-               $("#imgCaptions").text("...");
+               $("#imgCaptions").text("");
                $("#imgCaptions").fadeIn();
           });
      }
