@@ -77,6 +77,10 @@ hr.style{
      padding-top: 10px;
      border: 1px solid black;
 }
+.title{
+     text-decoration: underline;
+     font-weight: bold;
+}
 
 /* Experience Section */
 .columnExperience{
